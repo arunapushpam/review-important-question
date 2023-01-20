@@ -1,0 +1,125 @@
+		
+		<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+		<script>
+		
+		
+		//reverse number
+		var a = reverse(533);
+
+        function reverse(num){
+            var b=0;
+            while(num > 0){
+            var rem = (num % 10);
+            num=parseInt(num / 10);
+            b=(b * 10) + rem;
+        }
+            return (b);
+        }
+        console.log(a);
+		
+		
+		//reverse number word
+		
+		
+		var a=prompt("Ener Number");
+			var sum=0;
+			while (a>0){
+			
+				var rem=a%10;
+					sum=(sum*10)+rem;
+					
+				num=(a-rem)/10;
+				
+			
+				if (rem==0){
+					document.write("zero");
+				}
+				else if (rem==1){
+					document.write("One");
+				}
+				else if (rem==2){
+					document.write("Two");
+				}
+				else if (rem==3){
+					document.write("Three");
+				}
+				else if (rem==4){
+					document.write("Four");
+				}
+				else if (rem==5){
+					document.write("Five");
+				}
+				else if (rem==6){
+					document.write("Six");
+				}
+				else if (rem==7){
+					document.write("Seven");
+				}
+				else if (rem==8){
+					document.write("eight");
+				}
+				else if (rem==9){
+					document.write("Nine");
+				}
+			}
+				//armstrong number
+					var a=prompt("enter 3 digit number")
+					var sum=0
+					var number=a
+					
+					while(number>0){
+					var remainder=number%10;
+					sum=sum+(remainder*remainder*remainder);
+					number=parseInt(number/10)
+					}
+					if(sum==a){
+						console.log("It is a armstrong number")
+					}
+					else{
+						console.log("It is  a not  armstrong number")
+					}
+					
+					//program to check the number of occurrence of a character
+			var	name=prompt("Enter a name");
+		var letter=prompt("Enter a letter");
+		var word=0;
+		var result=fun(name,letter);
+		function fun(x,y){
+			for (i=0; i< x.length; i++){
+				
+				if (x[i]== y){
+					word++;
+				}
+			}
+			if(word){
+				console.log("This Word "+ word + " same letter");
+			}
+			else{
+				console.log("This Word  has no same letter");
+			}
+		}
+		
+		//palindrome string
+			var n=prompt("Palindrom")
+		var word=[]
+		for(i=n.length-1;i>=0;i--){
+			word+=n[i]
+			
+		}
+		if(n==word){
+		 console.log("palindrome")		
+			}
+		else{
+		console.log("not palindrome")
+		}
+		
+	</script>
+</body>
+</html>
